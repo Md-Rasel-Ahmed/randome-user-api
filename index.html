@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Search fish</title>
+    <style>
+        .card{
+            position: relative;
+            width:412px;
+            margin:5px;
+        }
+        #user{
+            width:150px;
+            height:150px;
+            /* border:1px solid #ddd; */
+            display: block;
+            border-radius: 50%;
+            margin:auto;
+            margin-top: 3em;
+        }
+        .card-header{
+            height:150px;
+        }
+        .card-body{
+            height:200px;
+        }
+        .icons{
+             display:flex;
+             gap: 10px;
+        }
+        .card-footer{
+            display:flex;
+            justify-content:center;
+        }
+        i{
+            transition: 0.5s ease-in-out;
+        }
+        i:hover{
+            
+            transform: translateY(10px);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center p-2">RANDOME USER!</h1>
+    <div class="card  mx-auto">
+        <div class="card-header ">
+          <img id="user" src="" alt="user" >
+        </div>
+        <div class="card-body">
+            <h4 id="adress-detail" class="mt-5 text-center">HI,My name is</h4>
+            <h2 id="adress" class="  text-center"></h2>
+        </div>
+        <div class="card-footer">
+         <div class="icons">
+             <a href=""><i class="fas fa-user fs-1 text-info p-1"></i></a>
+             <a href=""><i class="fas fa-envelope fs-1 text-info p-1"></i></a>
+           <a href=""><i class="fas fa-calendar-days fs-1 text-info p-1"></i></a>
+           <a href=""><i class="fas fa-location-dot fs-1 text-info p-1"></i></a>
+           <a href=""><i class="fas fa-phone fs-1 text-info p-1"></i></a>
+           <a href=""><i class="fas fa-lock fs-1 text-info p-1"></i></a>
+         </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
